@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -10,6 +11,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -18,4 +23,12 @@ html {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+:root {
+  --color-blue: #005555;
+  --color-black: #0e0f0f;
+  --main-back: #232323;
+  --color-light: #FFFFFF;
+  --color-gray: rgb(235, 232, 232);
 }

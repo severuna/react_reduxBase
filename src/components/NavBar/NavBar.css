@@ -1,0 +1,22 @@
+.header {
+    width: 100vw;
+    padding: 2rem 4rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-black);
+}
+
+.header-item {
+    font-size: 3rem;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all 1s ease;
+}
+
+
+.header-item:hover {
+    transform: scale(1.1);
+    color: var(--color-light);
+    text-decoration: underline;
+}
