@@ -1,8 +1,8 @@
 import React from 'react';
 import './Main.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home/Home';
-import Add from './AddPost/Add';
+import Home from './pages/Home/Home';
+import Add from './pages/AddPost/Add';
 
 const Main = () => {
     return (
