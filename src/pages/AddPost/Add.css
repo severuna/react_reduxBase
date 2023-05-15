@@ -1,0 +1,51 @@
+.title {
+    color: var(--color-light);
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+.form {
+    border-radius: 1rem;
+    padding: 4rem;
+    border: 1px solid var(--color-gray);
+    min-width: 30rem;
+    width: 60%;
+    max-width: 100rem;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--color-blue);
+}
+
+.form-label {
+    gap: 7rem;
+    width: 100%;
+}
+
+.form-label span {
+    font-size: 3rem;
+    color: aliceblue;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+select, option, input {
+    border-radius: .5rem;
+    background-color: aliceblue;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+select, option {
+    width: 30rem;
+    text-align: center;
+}
+
+.form-submit {
+    width: 40rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1rem;
+}
