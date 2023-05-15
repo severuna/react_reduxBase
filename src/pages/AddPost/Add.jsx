@@ -32,11 +32,11 @@ const Add = () => {
                 </label>
                 <label className='form-label row'>
                     <span>Enter the text of the publication</span>
-                    <input placeholder='Max. length - 200 characters' type='text' maxLength={200} name='content' value={inputs.content || ''}  onChange={handleChange} />
+                    <input placeholder='Max. length - 200 characters' type='text' maxLength={200} name='content' value={inputs.content || ''} required="required" onChange={handleChange} />
                 </label>
                 <label className='form-label row'>
                     <span>Enter image link</span>
-                    <input type='text' placeholder='https://example.com/...' name='media' value={inputs.media || ''}  onChange={handleChange} />
+                    <input type='text' placeholder='https://example.com/...' name='media' value={inputs.media || ''} required="required" onChange={handleChange} />
                 </label>
                 <input type="submit" value='submit' className='form-submit' />
             </form>

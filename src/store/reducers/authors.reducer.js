@@ -209,8 +209,14 @@ const initialState = {
 const authorReducer = ( state = initialState, action) => {
 
     switch (action.type) {
-        default: 
+
+        case "add": {
+            return state;
+        }
+
+        default: {
             return state
+        }
     }
 }
 

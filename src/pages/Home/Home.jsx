@@ -5,25 +5,36 @@ import Post from '../../components/Post';
 
 const Home = () => {
 
-    const AUTHOR_LIST = useSelector((state) => state);
-    console.log({AUTHOR_LIST});
+    // const dispatch = useDispatch();
 
-    const obj = {
-        name: 'Draco Malfoy',
-        nickname: 'best',
-        date: '09.10.2022',
-        content: 'You`re not dangerous at all, are you, you great ugly brute!',
-        avatar: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/draco-malfoy-from-harry-potter-watercolor-portrait-design-turnpike.jpg',
-        media: 'https://f.vividscreen.info/soft/7fe06adc5f4d516932fb6d19adbd5166/Cute-Kitty-Art-wide-i.jpg',
-        like: 451,
-        comments: 561,
-        retweet: 501
-    }
+    const AUTHOR_LIST = useSelector((state) => state);
+
+    // const show = () => {
+    //     dispatch(setAuthorsAction());
+    // }
+
+    let posts = [];
+
+    for (const [key, value] of Object.entries(AUTHOR_LIST.authors)) {
+        value.posts.forEach(element => {
+            posts.push(<Post 
+                key={key + Math.random()}
+                name={value.name} 
+                nickname={value.nickname} 
+                avatar={value.avatar}
+                date={element.date}
+                content={element.content}
+                media={element.media}
+                like={element.reactions.like}
+                comments={element.reactions.comments}
+                retweet={element.reactions.retweet}
+                />);
+        })
+    } 
     
     return (
         <div className='content column'>
-            <h1 className='title'>Home (show posts)</h1>
-            <Post {...obj}/>
+            {posts}
         </div>
     );
 };

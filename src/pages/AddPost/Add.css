@@ -15,31 +15,32 @@
     max-width: 100rem;
     align-items: center;
     gap: 4rem;
-    background-color: var(--color-blue);
+    background-color: var(--color-black);
 }
 
 .form-label {
     gap: 7rem;
     width: 100%;
+    justify-content: space-between;
 }
 
 .form-label span {
     font-size: 3rem;
-    color: aliceblue;
+    color: var(--color-light);
     font-weight: 700;
     font-family: cursive;
 }
 
 select, option, input {
     border-radius: .5rem;
-    background-color: aliceblue;
+    width: 35rem;
+    background-color: var(color-light);
     padding: 1rem;
     font-size: 2rem;
     font-family: cursive;
 }
 
 select, option {
-    width: 30rem;
     text-align: center;
 }
 
@@ -48,4 +49,5 @@ select, option {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 1rem;
+    background-color: var(--color-blue);
 }
