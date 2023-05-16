@@ -8,7 +8,7 @@ const Add = () => {
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setInputs(values => ({...values, [name]: value}))
+        setInputs(values => ({ ...values, [name]: value, }))
     }  
     
     const handleSubmit  = ( event ) => {
@@ -22,12 +22,12 @@ const Add = () => {
             <form className='form column'  onSubmit={handleSubmit}>
                 <label className='form-label row'>
                     <span>Choose an author from the list:</span>
-                    <select name='author' value={inputs.author || ''}  onChange={handleChange}>
-                        <option value="authors_1">Severus Snape</option>
-                        <option value="authors_2">Luna Lovegood</option>
-                        <option value="authors_3">Draco Malfoy</option>
-                        <option value="authors_4">Lucius Malfoy</option>
-                        <option value="authors_5">Lord Voldemort</option>
+                    <select name='author' value={inputs.author || 'authors_2'}  onChange={handleChange}>
+                        <option value="author_1">Severus Snape</option>
+                        <option value="author_2">Luna Lovegood</option>
+                        <option value="author_3">Draco Malfoy</option>
+                        <option value="author_4">Lucius Malfoy</option>
+                        <option value="author_5">Lord Voldemort</option>
                     </select>
                 </label>
                 <label className='form-label row'>
