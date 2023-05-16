@@ -11,8 +11,6 @@ import oops from './img/oops.avif';
 
 const Post = ( props ) => {
 
-    console.log(props.name)
-
     const getAvatar = ( ) => {
         
         if ( String(props.name) === 'Severus Snape') {
@@ -28,7 +26,21 @@ const Post = ( props ) => {
         }
         
     }
-    
+
+    const setMedia = (  ) => {
+        if (String(props.media).includes('https')) {
+            return props.media
+        } else {
+            return oops
+        }
+    }
+
+    const checkMedia = ( error ) => {
+        console.log(error)
+            setMedia('error')
+    }
+
+
     const randomInt = ( ) => {
         return Math.floor(Math.random() * (600 - 157) + 157);
     }
@@ -44,7 +56,7 @@ const Post = ( props ) => {
             <div className='post-main column'>
                 <div className='post-main__content column'>
                     <p className='post-main__content-text'>{props.content}</p>
-                    <img src={props.media === undefined ? oops :  props.media } alt='media' className='post-main__content-media' />
+                    <img src={setMedia()} alt='media' className='post-main__content-media' />
                 </div>
                 <div className='post-main__reactions row'>
                     <div className='post-main__reactions-item row'>
