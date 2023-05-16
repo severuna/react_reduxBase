@@ -35,12 +35,6 @@ const Post = ( props ) => {
         }
     }
 
-    const checkMedia = ( error ) => {
-        console.log(error)
-            setMedia('error')
-    }
-
-
     const randomInt = ( ) => {
         return Math.floor(Math.random() * (600 - 157) + 157);
     }

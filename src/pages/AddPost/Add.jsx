@@ -34,8 +34,6 @@ const Add = () => {
     
             resetForm();
 
-            console.log(inputs)
-
         } else {
 
             alert('Choose an author from the list!');
