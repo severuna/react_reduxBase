@@ -49,11 +49,11 @@ const Add = () => {
                 <label className='form-label row'>
                     <span>Choose an author from the list:</span>
                     <select name='author' value={inputs.author || 'authors_2'}  onChange={handleChange}>
-                        <option value="author_1">Severus Snape</option>
-                        <option value="author_2">Luna Lovegood</option>
-                        <option value="author_3">Draco Malfoy</option>
-                        <option value="author_4">Lucius Malfoy</option>
-                        <option value="author_5">Lord Voldemort</option>
+                        <option value="Severus Snape">Severus Snape</option>
+                        <option value="Luna Lovegood">Luna Lovegood</option>
+                        <option value="Draco Malfoy">Draco Malfoy</option>
+                        <option value="Lucius Malfoy">Lucius Malfoy</option>
+                        <option value="Lord Voldemort">Lord Voldemort</option>
                     </select>
                 </label>
                 <label className='form-label row'>
