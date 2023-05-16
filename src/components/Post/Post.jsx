@@ -1,12 +1,37 @@
 import React from 'react';
 import './Post.css';
-import Reactions from './reactions/Reactions';
+import Reactions from '../reactions/Reactions';
+import snape from './img/snape.jpg';
+import luna from './img/luna.jpg';
+import draco from './img/draco.jpg';
+import lucius from './img/lucius.jpg';
+import tom from './img/tom.jpg';
+
 
 const Post = ( props ) => {
+
+    console.log(props.name)
+
+    const getAvatar = ( name ) => {
+        
+        if ( String(props.name) === 'Severus Snape') {
+            return snape
+        } else if ( String(props.name) === 'Luna Lovegood') {
+            return luna
+        } else if ( String(props.name) === 'Draco Malfoy') {
+            return draco
+        } else if ( String(props.name) === 'Lucius Malfoy') {
+            return lucius
+        } else if ( String(props.name) === 'Lord Voldemort') {
+            return tom
+        }
+        
+    }
+
     return (
         <div className='post column'>
             <div className='post-head row'>
-                <img src={props.avatar} alt={props.name} className='post-head__avatar' />
+                <img src={getAvatar()} alt={props.name} className='post-head__avatar' />
                 <h2 className="post-head__name">{props.name}</h2>
                 <p className='post-head__nickname'>@{props.nickname}</p>
                 <p className='post-head__date'>{props.date}</p>

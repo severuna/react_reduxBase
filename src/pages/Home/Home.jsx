@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
-import Post from '../../components/Post';
+import Post from '../../components/Post/Post';
 
 const Home = () => {
 
@@ -31,7 +31,7 @@ const Home = () => {
     
     return (
         <div className='content column'>
-            {posts}
+            {posts.reverse()}
         </div>
     );
 };

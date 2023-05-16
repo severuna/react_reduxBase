@@ -3,7 +3,6 @@ const initialState = {
         {
         name: 'Severus Snape',
         nickname: 'apothecary',
-        avatar: 'https://i.pinimg.com/736x/a9/65/77/a96577a2ee8f26042eacca3c5a4ac15d.jpg',
         post_num: 1,
         date: '09.01.1960',
         content: 'Tut, tut — fame clearly isn`t everything.',
@@ -15,7 +14,6 @@ const initialState = {
         {
             name: 'Severus Snape',
             nickname: 'apothecary',
-            avatar: 'https://i.pinimg.com/736x/a9/65/77/a96577a2ee8f26042eacca3c5a4ac15d.jpg',
             post_num: 2,
             date: '20.05.1991',
             content: 'Well, it may have escaped your notice, but life isn`t fair.',
@@ -27,7 +25,6 @@ const initialState = {
         {
             name: 'Severus Snape',
             nickname: 'apothecary',
-            avatar: 'https://i.pinimg.com/736x/a9/65/77/a96577a2ee8f26042eacca3c5a4ac15d.jpg',
             post_num: 3,
             date: '02.10.1984',
             content: 'The mind is not a book, to be opened at will and examined at leisure.',
@@ -39,7 +36,6 @@ const initialState = {
         {
             name: 'Luna Lovegood',
             nickname: 'luna',
-            avatar: 'https://i.pinimg.com/originals/fd/4a/06/fd4a06b42bfff6abe8a1e45cab7822fb.jpg',
             post_num: 4,
             date: '13.02.1981',
             content: 'I`ve interrupted a deep thought, haven`t I? I can see it growing smaller in your eyes.',
@@ -51,7 +47,6 @@ const initialState = {
         {
             name: 'Luna Lovegood',
             nickname: 'luna',
-            avatar: 'https://i.pinimg.com/originals/fd/4a/06/fd4a06b42bfff6abe8a1e45cab7822fb.jpg',
             post_num: 5,
             date: '22.10.1999',
             content: 'I sleepwalk, you see. That`s why I wear shoes to bed.',
@@ -63,7 +58,6 @@ const initialState = {
         {
             name: 'Luna Lovegood',
             nickname: 'luna',
-            avatar: 'https://i.pinimg.com/originals/fd/4a/06/fd4a06b42bfff6abe8a1e45cab7822fb.jpg',
             post_num: 6,
             date: '05.11.1992',
             content: 'I think the answer is that a circle has no beginning.',
@@ -75,7 +69,6 @@ const initialState = {
         {
             name: 'Draco Malfoy',
             nickname: 'best',
-            avatar: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/draco-malfoy-from-harry-potter-watercolor-portrait-design-turnpike.jpg',
             post_num: 7,
             date: '05.06.1980',
             content: 'You`re not dangerous at all, are you, you great ugly brute!',
@@ -87,7 +80,6 @@ const initialState = {
         {
             name: 'Draco Malfoy',
             nickname: 'best',
-            avatar: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/draco-malfoy-from-harry-potter-watercolor-portrait-design-turnpike.jpg',
             post_num: 8,
             date: '10.01.1990',
             content: ' You better enjoy it while you can',
@@ -99,7 +91,6 @@ const initialState = {
         {
             name: 'Draco Malfoy',
             nickname: 'best',
-            avatar: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/draco-malfoy-from-harry-potter-watercolor-portrait-design-turnpike.jpg',
             post_num: 9,
             date: '30.12.1996',
             content: 'You`re gonna regret this! You and your bloody chicken!',
@@ -111,7 +102,6 @@ const initialState = {
         {
             name: 'Lucius Malfoy',
             nickname: 'father_of_the_best',
-            avatar: 'https://i.pinimg.com/originals/a1/2d/4d/a12d4dab598bd4b5457803cd914bbf72.jpg',
             post_num: 10,
             date: '10.10.1954',
             content: 'One day soon you are going to meet the same sticky end.',
@@ -123,7 +113,6 @@ const initialState = {
         {
             name: 'Lucius Malfoy',
             nickname: 'father_of_the_best',
-            avatar: 'https://i.pinimg.com/originals/a1/2d/4d/a12d4dab598bd4b5457803cd914bbf72.jpg',
             post_num: 11,
             date: '21.06.1974',
             content: 'What`s the use in being a disgrace to the name of wizard if they don`t even pay you well for it?',
@@ -135,7 +124,6 @@ const initialState = {
         {
             name: 'Lucius Malfoy',
             nickname: 'father_of_the_best',
-            avatar: 'https://i.pinimg.com/originals/a1/2d/4d/a12d4dab598bd4b5457803cd914bbf72.jpg',
             post_num: 12,
             date: '23.05.1996',
             content: 'Do enjoy yourself, won`t you? While you can.',
@@ -147,7 +135,6 @@ const initialState = {
         {
             name: 'Lord Voldemort',
             nickname: 'DarkLord',
-            avatar: 'https://i.pinimg.com/736x/e6/19/4c/e6194cc9f285bf9f51ff305d908d38ea.jpg',
             post_num: 13,
             date: '31.12.1926',
             content: 'There is no good and evil, there is only power and those too weak to seek it.',
@@ -159,7 +146,6 @@ const initialState = {
         {
             name: 'Lord Voldemort',
             nickname: 'DarkLord',
-            avatar: 'https://i.pinimg.com/736x/e6/19/4c/e6194cc9f285bf9f51ff305d908d38ea.jpg',
             post_num: 14,
             date: '05.12.1954',
             content: 'But I was willing to embrace mortal life again, before chasing immortality.',
@@ -171,7 +157,6 @@ const initialState = {
         {
             name: 'Lord Voldemort',
             nickname: 'DarkLord',
-            avatar: 'https://i.pinimg.com/736x/e6/19/4c/e6194cc9f285bf9f51ff305d908d38ea.jpg',
             post_num: 14,
             date: '12.12.1991',
             content: 'But no matter, no matter, things have changed.',
