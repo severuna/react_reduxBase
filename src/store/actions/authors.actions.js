@@ -1,6 +1,7 @@
-const setAuthorsAction = () => {
+const setAuthorsAction = ( post ) => {
     return {
-        type: 'add'
+        type: 'add', 
+        payload: post
     };
 };
 

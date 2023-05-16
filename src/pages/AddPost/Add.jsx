@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import './Add.css';
+import { useDispatch } from 'react-redux';
+import setAuthorsAction from '../../store/actions/authors.actions';
 
 const Add = () => {
+
+    const dispatch = useDispatch();
 
     const [ inputs, setInputs ] = useState({});
 
@@ -10,10 +14,32 @@ const Add = () => {
         const value = event.target.value;
         setInputs(values => ({ ...values, [name]: value, }))
     }  
-    
+
+    const resetForm = ( ) => {
+        setInputs('');
+    }
+
     const handleSubmit  = ( event ) => {
+
         event.preventDefault();
-        console.log(inputs)
+
+        if( inputs.author?.trim() ) {
+
+            dispatch(setAuthorsAction({
+                name: inputs.author,
+                content: inputs.content,
+                media: inputs.media,
+                date: inputs.date
+            }));
+    
+            resetForm();
+
+        } else {
+
+            alert('Choose an author from the list!');
+            
+        }
+        
     }
 
     return (
@@ -29,6 +55,10 @@ const Add = () => {
                         <option value="author_4">Lucius Malfoy</option>
                         <option value="author_5">Lord Voldemort</option>
                     </select>
+                </label>
+                <label className='form-label row'>
+                    <span>Enter the date</span>
+                    <input type='date' name='date' value={inputs.date || ''} required="required" onChange={handleChange} />
                 </label>
                 <label className='form-label row'>
                     <span>Enter the text of the publication</span>
