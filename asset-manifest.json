@@ -1,16 +1,21 @@
 {
   "files": {
     "main.css": "/react_reduxBase/static/css/main.7f56098c.css",
-    "main.js": "/react_reduxBase/static/js/main.41def1a6.js",
+    "main.js": "/react_reduxBase/static/js/main.fc6dfab0.js",
+    "static/media/draco.jpg": "/react_reduxBase/static/media/draco.0b0fe84c87ec7ec5ee5d.jpg",
+    "static/media/lucius.jpg": "/react_reduxBase/static/media/lucius.35b53a5dc5b923bb89cf.jpg",
+    "static/media/luna.jpg": "/react_reduxBase/static/media/luna.1508e27686f6627cd09f.jpg",
+    "static/media/snape.jpg": "/react_reduxBase/static/media/snape.11742ab230adac247a0b.jpg",
+    "static/media/tom.jpg": "/react_reduxBase/static/media/tom.288ae9651b834d1681a1.jpg",
     "static/media/retweet.svg": "/react_reduxBase/static/media/retweet.849dc6dbd4e87cc4ce03ad33a574fccf.svg",
     "static/media/comment.svg": "/react_reduxBase/static/media/comment.173295745339802a1fef2735f8f33d04.svg",
     "static/media/like.svg": "/react_reduxBase/static/media/like.51c4453ed3cc7149b2d04c1e674c7f50.svg",
     "index.html": "/react_reduxBase/index.html",
     "main.7f56098c.css.map": "/react_reduxBase/static/css/main.7f56098c.css.map",
-    "main.41def1a6.js.map": "/react_reduxBase/static/js/main.41def1a6.js.map"
+    "main.fc6dfab0.js.map": "/react_reduxBase/static/js/main.fc6dfab0.js.map"
   },
   "entrypoints": [
     "static/css/main.7f56098c.css",
-    "static/js/main.41def1a6.js"
+    "static/js/main.fc6dfab0.js"
   ]
 }
