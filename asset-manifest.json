@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_reduxBase/static/css/main.7f56098c.css",
-    "main.js": "/react_reduxBase/static/js/main.4c1514d3.js",
+    "main.js": "/react_reduxBase/static/js/main.794a00dd.js",
     "static/media/draco.jpg": "/react_reduxBase/static/media/draco.0b0fe84c87ec7ec5ee5d.jpg",
     "static/media/lucius.jpg": "/react_reduxBase/static/media/lucius.35b53a5dc5b923bb89cf.jpg",
     "static/media/luna.jpg": "/react_reduxBase/static/media/luna.1508e27686f6627cd09f.jpg",
@@ -13,10 +13,10 @@
     "static/media/like.svg": "/react_reduxBase/static/media/like.51c4453ed3cc7149b2d04c1e674c7f50.svg",
     "index.html": "/react_reduxBase/index.html",
     "main.7f56098c.css.map": "/react_reduxBase/static/css/main.7f56098c.css.map",
-    "main.4c1514d3.js.map": "/react_reduxBase/static/js/main.4c1514d3.js.map"
+    "main.794a00dd.js.map": "/react_reduxBase/static/js/main.794a00dd.js.map"
   },
   "entrypoints": [
     "static/css/main.7f56098c.css",
-    "static/js/main.4c1514d3.js"
+    "static/js/main.794a00dd.js"
   ]
 }
