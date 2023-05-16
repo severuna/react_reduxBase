@@ -1,5 +1,5 @@
-const initialState = [
-    {
+const initialState = {
+    authors: [{
         name: 'Severus Snape',
         nickname: 'apothecary',
         avatar: 'https://i.pinimg.com/736x/a9/65/77/a96577a2ee8f26042eacca3c5a4ac15d.jpg',
@@ -178,21 +178,23 @@ const initialState = [
         like: 638,
         comments: 268,
         retweet: 333
-    }
-];
+    }]
+};
 
 const authorReducer = ( state = initialState, action) => {
 
     switch (action.type) {
 
         case "add": {
-            return state
+            return {
+                ...state, 
+            }
         }
 
         default: {
             return state
         }
-        
+
     }
 }
 

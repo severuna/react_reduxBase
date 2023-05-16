@@ -10,21 +10,24 @@ const Home = () => {
     let posts = [];
 
     Object.entries(AUTHOR_LIST.authors).forEach( ([key, value]) => {
-        console.log(key, value);
-        posts.push(<Post 
-                        key={key + Math.random()}
-                        name={value.name} 
-                        nickname={value.nickname} 
-                        avatar={value.avatar}
-                        date={value.date}
-                        content={value.content}
-                        media={value.media}
-                        like={value.like}
-                        comments={value.comments}
-                        retweet={value.retweet}
-                    />);
 
-    });
+        value.forEach(element => {
+            posts.push(
+                <Post 
+                    key={key + Math.random()}
+                    name={element.name} 
+                    nickname={element.nickname} 
+                    avatar={element.avatar}
+                    date={element.date}
+                    content={element.content}
+                    media={element.media}
+                    like={element.like}
+                    comments={element.comments}
+                    retweet={element.retweet}
+                />
+            );
+        });
+    })
     
     return (
         <div className='content column'>
